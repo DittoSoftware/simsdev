@@ -21,7 +21,7 @@
 <h1>Admin Homepage</h1>
 <br>
 <form method="post" action="load.php">
-	<button type="button" onclick="location.href='file_view.php'">File Manager</button>
+	<button type="button" onclick="location.href='../index.php/file'">File Manager</button>
 	<!-- <input type="text" id="svalue"> -->
   <button type="button" onclick="location.href='main.php'">Dashboard</button>
 

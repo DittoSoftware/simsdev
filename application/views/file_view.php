@@ -39,7 +39,7 @@ if($PASSWORD) {
 // must be in UTF-8 or `basename` doesn't work
 setlocale(LC_ALL,'en_US.UTF-8');
 
-chdir('C:\xampp\htdocs\sims\application\files');
+chdir('C:\xampp\htdocs\Sims\application\files');
 
 $tmp_dir = dirname($_SERVER['SCRIPT_FILENAME']);
 if(DIRECTORY_SEPARATOR==='\\') $tmp_dir = str_replace('/',DIRECTORY_SEPARATOR,$tmp_dir);
@@ -200,11 +200,11 @@ div.window{
     padding: 25px;
 	margin-top: 5%;
     margin-left: 5%;
-	height: 500px;  
+	height: 500px;
 	overflow-y:scroll;
-	background-color: white;
+	background-color: white:
 }
-body {font-family: "lucida grande","Segoe UI",Arial, sans-serif; font-size: 14px;width:1024;padding:1em;margin:0;background: url(./loginBackground.jpg);}
+body {font-family: "lucida grande","Segoe UI",Arial, sans-serif; font-size: 14px;width:1024;padding:1em;margin:0;background-image:url('loginBackground.jpg');}
 th {font-weight: normal; color: #1F75CC; background-color: #F0F9FF; padding:.5em 1em .5em .2em;
 	text-align: left;cursor:pointer;user-select: none;}
 th .indicator {margin-left: 6px }
@@ -229,10 +229,10 @@ footer a, footer a:visited {color:#bbbbc5;}
 a, a:visited { color:#00c; text-decoration: none}
 a:hover {text-decoration: underline}
 .sort_hide{ display:none;}
-table {border-collapse: collapse;width:100%;}
+table {border-collapse: collapse;width:100%; background-color: white;}
 thead {max-width: 50%}
-td { padding:.2em 1em .2em .2em; border-bottom:1px solid #def;height:30px; font-size:12px;white-space: nowrap; 
-max-width:200px;  
+td { padding:.2em 1em .2em .2em; border-bottom:1px solid #def;height:30px; font-size:12px;white-space: nowrap;
+max-width:200px;
 word-wrap:break-word;}
 td.first {font-size:14px;white-space: normal;}
 td.empty { color:#777; font-style: italic; text-align: center;padding:3em 0;}
@@ -460,7 +460,25 @@ $(function(){
 })
 
 </script>
-</head><body>
+
+</head>
+<center>
+<br>
+<br>
+<h1>Admin Homepage</h1>
+<br>
+<form method="post" action="load.php">
+	<button type="button" onclick="location.href='../application/home.php'">Home</button>
+	<!-- <input type="text" id="svalue"> -->
+  <button type="button" onclick="location.href='../application/main.php'">Dashboard</button>
+
+  <button type="button" onclick="alert('Feature Not Avaliable')">Account Manager</button>
+</form>
+  <br>
+</center>
+
+
+<body>
 <div class="window">
 <div id="top">
    <?php if($allow_create_folder): ?>
@@ -478,7 +496,7 @@ $(function(){
 		<input type="file" multiple />
 	</div>
    <?php endif; ?>
-   
+
 	<div id="breadcrumb">&nbsp;</div>
 <div id="upload_progress"></div>
 <table  id="table"><thead><tr>
@@ -493,4 +511,4 @@ $(function(){
 </tbody>
 </table>
 </div>
-</body></html>
+</body></center></html>
