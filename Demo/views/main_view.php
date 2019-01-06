@@ -95,6 +95,7 @@
     <section>
     </section>
     <section>';
+    //include 'DatabaseControl2.php';
     echo '</section>
     </section>
     </form>
@@ -168,6 +169,7 @@
     echo '
     </section>
     <section>';
+    //include 'DatabaseControl2.php';
     echo '</section>
     </section>
     </form>
